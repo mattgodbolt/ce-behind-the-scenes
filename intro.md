@@ -45,16 +45,3 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 ## GCC Explorer!
 
 ![First version](images/first_working.png)<!-- .element: class="no-border white-bg" -->
-
-
-
-<div>
-
-## CE stats
-![Stats](images/all_compilations_stats.png)<!-- .element: class="no-border stretch white-bg" -->
-
-* 950,000 compilations per week
-* avg 1.5/second, peak 4/second
-
-</div>
-<!-- .element: class="white-bg" -->

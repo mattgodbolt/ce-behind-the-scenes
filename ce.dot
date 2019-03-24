@@ -1,0 +1,42 @@
+digraph foo {
+    edge [ dir=both ];
+    outside [shape = parallelogram, rank="source"];
+
+    cloudfront [shape = oval];
+
+    alb [shape = box, label="Application Load Balancer"];
+
+    subgraph cluster_ce_nodes {
+    label = "Nodes";
+        style = filled;
+        		color=lightgrey;
+
+        ce_node_1 [shape = box, label="EC2"];
+        ce_node_2 [shape = box, label="EC2"];
+
+    }
+    subgraph cluster_beta_nodes {
+    label="Beta Nodes";
+        style = filled;
+		color=lightgrey;
+    beta_node_1 [shape = box, label="EC2"];
+    }
+
+    admin [shape = box, rank="sink", label="admin\nEC2"];
+
+    efs [shape = folder];
+    s3 [shape = folder];
+    dynamodb [shape = cylinder];
+
+    outside -> cloudfront;
+    cloudfront -> alb;
+
+    alb -> ce_node_1;
+    alb -> ce_node_2;
+    alb -> beta_node_1;
+
+    { ce_node_1, ce_node_2, beta_node_1 } -> admin;
+    { admin, ce_node_1, ce_node_2, beta_node_1 } -> efs;
+    { admin, ce_node_1, ce_node_2, beta_node_1 } -> s3;
+    { admin, ce_node_1, ce_node_2, beta_node_1 } -> dynamodb;
+}
