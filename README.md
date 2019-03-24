@@ -2,4 +2,4 @@
 
 Work in progress.
 
-Rendered slides at: https://mattgodbolt.github.io/ce-behind-the-scenes/
+Rendered slides (will be) at: https://mattgodbolt.github.io/ce-behind-the-scenes/ once this is public
