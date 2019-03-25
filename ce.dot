@@ -1,4 +1,8 @@
-digraph foo {
+digraph compiler_explorer {
+    bgcolor=transparent;
+    compound=true;
+    nodesep=0.6;
+    node [ color="#dddddd:#aaaaaa"; style=filled];
     edge [ dir=both ];
     outside [shape = parallelogram, rank="source"];
 
@@ -7,19 +11,18 @@ digraph foo {
     alb [shape = box, label="Application Load Balancer"];
 
     subgraph cluster_ce_nodes {
-    label = "Nodes";
+        label = "Prod Nodes";
         style = filled;
-        		color=lightgrey;
+        color="#99dd99";
 
         ce_node_1 [shape = box, label="EC2"];
         ce_node_2 [shape = box, label="EC2"];
-
     }
     subgraph cluster_beta_nodes {
-    label="Beta Nodes";
+        label="Beta Nodes";
         style = filled;
-		color=lightgrey;
-    beta_node_1 [shape = box, label="EC2"];
+        color="#dd99dd";
+        beta_node_1 [shape = box, label="EC2"];
     }
 
     admin [shape = box, rank="sink", label="admin\nEC2"];
@@ -31,12 +34,22 @@ digraph foo {
     outside -> cloudfront;
     cloudfront -> alb;
 
-    alb -> ce_node_1;
-    alb -> ce_node_2;
-    alb -> beta_node_1;
+    alb -> ce_node_1 [lhead=cluster_ce_nodes];
+    alb -> ce_node_2 [lhead=cluster_ce_nodes];
+    alb -> beta_node_1 [lhead=cluster_beta_nodes];
 
-    { ce_node_1, ce_node_2, beta_node_1 } -> admin;
-    { admin, ce_node_1, ce_node_2, beta_node_1 } -> efs;
-    { admin, ce_node_1, ce_node_2, beta_node_1 } -> s3;
-    { admin, ce_node_1, ce_node_2, beta_node_1 } -> dynamodb;
+    build [ shape=box, label="Compiler Builder\nEC2"];
+
+    admin->build;
+    build->s3;
+
+    admin -> {efs, s3, dynamodb };
+    { ce_node_1, ce_node_2} -> admin [ltail=cluster_ce_nodes];
+    { ce_node_1, ce_node_2} -> efs [ltail=cluster_ce_nodes];
+    { ce_node_1, ce_node_2} -> s3 [ltail=cluster_ce_nodes];
+    { ce_node_1, ce_node_2} -> dynamodb [ltail=cluster_ce_nodes];
+    { beta_node_1 } -> admin [ltail=cluster_beta_nodes];
+    { beta_node_1 } -> efs [ltail=cluster_beta_nodes];
+    { beta_node_1 } -> s3 [ltail=cluster_beta_nodes];
+    { beta_node_1 } -> dynamodb [ltail=cluster_beta_nodes];
 }
