@@ -96,3 +96,28 @@ ubuntu@admin-node ~> ce --env prod instances restart
 
 * Built with custom docker containers
 * Daily process
+* [World's worst CI](https://godbolt.org/admin/builds.html)
+* Takes 4+hr/day on fast machine (c5d.4xlarge)
+
+
+## Monitoring
+
+* [papertrail](https://papertrailapp.com/events) - live event monitoring
+* [AWS Dashboard](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#dashboards:name=CompilerExplorer)
+* [stathat](https://www.stathat.com/v) - aggregate statistics
+* [Google Analytics](https://analytics.google.com/analytics/web/?hl=en-GB&pli=1#/report/visitors-overview/a55180w58851134p60096530/)
+* [sentry](https://sentry.io/organizations/compiler-explorer/issues) - javascript error aggregation
+* [StatusCake](https://app.statuscake.com/UptimeStatus.php?tid=1813107) - uptime monitoring
+
+
+## When things go wrong
+
+![Uptime](images/status.png)
+
+
+## When things go wrong
+
+* [Bad config](https://cpplang.slack.com/archives/C7ETT0ZRP/p1534332219000100) (August 2018)
+* [EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<p>
+  ![Graph](images/EFS.png)<!-- .element: height="200" -->
+* [S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)

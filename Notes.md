@@ -15,6 +15,7 @@ Raw form notes below...
 * Show docker stuff
 * Show daily compiler build
 * Show daily trunk update
+* Terraform
 * PRs for adding stuff
 * EFS stuff
 * Hacking attempts
@@ -27,7 +28,8 @@ Raw form notes below...
     * Show llvm mca
   * LLVM IR
   * CE API mode -- count compilers example?
-  
+* cost
+
 * Top 5 Favourite compiler optimisations
   1. `POPCNT`
   2. constant-time sum
