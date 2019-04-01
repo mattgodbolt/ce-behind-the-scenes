@@ -9,11 +9,11 @@
 
 ## But really...
 
+* node.js
 * Amazon Web Services
+* CloudFront / Load Balancers
 * 3-5 EC2 instances
-* CloudFront
-* Application Load Balancers
-* EFS
+* EFS / S3 / DynamoDb
 
 </div><!-- .element: class="white-bg" -->
 
@@ -31,10 +31,10 @@
 
 ## CE stats
 
-* 950k compilers per day
+* 950k compiles per week
 * 1.5/sec average
 * 4/sec peak
-* 3000 short URLs/day
+* 3000 short URLs/week
 
 </div><!-- .element: class="white-bg" -->
 
@@ -73,22 +73,20 @@
 
 ## Maintaining
 
-```bash
-laptop$ ce admin
-
-ubuntu@admin-node ~> ce --env prod instances list 
-
+```
+admin-node ~> ce --env prod instances list
 Address          State      Type       ELB     Service  Version       
 34.226.244.207   running    t3.medium  healthy running  3965 (master) 
 3.91.14.221      running    c5.large   healthy running  3965 (master) 
-ubuntu@admin-node ~> ce --env prod builds list
+
+admin-node ~> ce --env prod builds list
 Live  Branch     Version    Size       Hash          
  -->  master     3965       58.2MiB    969925..8b69c5
       master     3979       58.2MiB    9410c2..fbc044
       policy-... 3983       58.2MiB    27eccb..62da61
 
-ubuntu@admin-node ~> ce --env prod builds set_current 3979
-ubuntu@admin-node ~> ce --env prod instances restart
+admin-node ~> ce --env prod builds set_current 3979
+admin-node ~> ce --env prod instances restart
 ```
 
 
@@ -112,12 +110,14 @@ ubuntu@admin-node ~> ce --env prod instances restart
 
 ## When things go wrong
 
-![Uptime](images/status.png)
+![Uptime](images/status.png)<!-- .element: height="500" -->
 
 
 ## When things go wrong
 
-* [Bad config](https://cpplang.slack.com/archives/C7ETT0ZRP/p1534332219000100) (August 2018)
-* [EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<p>
-  ![Graph](images/EFS.png)<!-- .element: height="200" -->
-* [S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)
+<ul>
+<li>[Bad config](https://cpplang.slack.com/archives/C7ETT0ZRP/p1534332219000100) (August 2018)</li>
+<li class=fragment>[EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<p>
+      ![Graph](images/EFS.png)<!-- .element: height="200" --></li>
+<li class=fragment>[S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)</li>
+</ul>

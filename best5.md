@@ -1,5 +1,18 @@
-## Best 5 Compiler Optimisations
+## Top 5 Compiler Optimisations
 <!-- .element: class="white-bg" -->
+
+
+### 1. Division by a constant
+
+```cpp
+unsigned divideXbyY(unsigned x, unsigned y)
+{
+  return x / y;
+}
+```
+
+
+### 2. Counting set bits
 
 ```cpp
 int countSetBits(unsigned a)
@@ -15,6 +28,8 @@ int countSetBits(unsigned a)
 }
 ```
 
+
+### 3. Chained conditionals
 
 ```cpp
 bool isspc(char c)
@@ -37,6 +52,8 @@ bool isspc(char c)
 ```
 
 
+### 4. Summation
+
 ```cpp
 
 int sumToX(int x)
@@ -51,9 +68,28 @@ int sumToX(int x)
 ```
 
 
+## 5. Devirtualisation
+
 ```cpp
-unsigned divideXbyY(unsigned x, unsigned y)
+/// g82:-O3 -march=haswell -fno-tree-vectorize
+// setup
+  #include <vector>
+  #include <numeric>
+  using namespace std;
+
+struct Func
 {
-  return x / y;
+  int operator()(int x)
+  {
+    return x * x;
+  }
+};
+
+int sumFunc(const vector<int> &v,
+            Func &func)
+{
+  int res = 0;
+  for (auto i : v) res += func(i);
+  return res;
 }
 ```
