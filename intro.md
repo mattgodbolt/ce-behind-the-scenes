@@ -1,12 +1,28 @@
 <div>
-# Hello!
+### Overview
 
-I'm accidentally a verb <!-- .element: class="fragment" -->
+* Intro & History
+* Assembly Primer
+* Top 5 Optimisations
+* Behind the Scenes
+* Stop and ask questions! <!-- .element: class="fragment" -->
+
 </div><!-- .element: class="white-bg" -->
 
 
 <div>
-![CE logo](images/CE.svg) <!-- .element: class="no-border stretch white-bg" -->
+## About me
+* Decade of making console games
+* Writing C++ tools
+* Google, YouTube mobile
+* Finance
+* But then...<!-- .element: class="fragment" -->
+</div><!-- .element: class="white-bg" -->
+
+
+<div>
+## This happened...
+![CE logo](images/CE.svg) <!-- .element: class="no-border stretch" -->
 </div><!-- .element: class="white-bg" -->
 
 
@@ -43,37 +59,50 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 
 ## GCC Explorer!
-
-![First version](images/first_working.png)<!-- .element: height="500" class="no-border white-bg" -->
+<!-- .element: class="white-bg" -->
+![First version](images/first_working.png)<!-- .element: height="470" class="no-border" -->
 
 
 <div>
 
 ## Evolution
-
 * 2012
   * Colouration & filtering
   * D language support
+* 2013
+  * Battle hardening
+  * More compilers
 * 2014
   * goo.gl short links
   * Rust support
-* 2015
-  * Binary support
 
 </div><!-- .element: class="white-bg" -->
 
 
 <div>
+
 ## Evolution
+* 2015
+  * Binary support
 * 2016
   * GoldenLayout
 * 2017
+  * Monaco
   * Libraries
+</div><!-- .element: class="white-bg" -->
+
+
+<div>
+
+## Evolution
 * 2018
   * Unified languages
   * MS compilers
   * Tools windows
-
+* 2019
+  * Bug fixes
+  * Cache improvements
+  * 6502 support!
 </div><!-- .element: class="white-bg" -->
 
 

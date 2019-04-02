@@ -1,4 +1,4 @@
-# Assembly!?
+## Assembly!
 <!-- .element: class="white-bg" -->
 
 <div class="fragment white-bg">
