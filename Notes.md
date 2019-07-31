@@ -1,5 +1,14 @@
 # Notes
 
+## Readying for CppCon
+
+* update stats for up-to-date
+* add a section on "power features of CE":
+  * execution, new pane as well as normal
+  * Herb surprised by #include URL and mouse-over asm
+
+## From first presentation April 2019
+
 Raw form notes below...
 
 * Stats
