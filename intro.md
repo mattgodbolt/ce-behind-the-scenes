@@ -29,8 +29,7 @@
 <div>
 ## Origin Story
 
-* No superhero<!-- .element: class="fragment" -->
-* In 2012 I worked in low-latency trading<!-- .element: class="fragment" -->
+* In 2012 I worked in low-latency trading
 * "Discussing" c++0x features<!-- .element: class="fragment" -->
 
 ```bash
