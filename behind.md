@@ -31,7 +31,7 @@
 
 ## CE stats
 
-* 950k compiles per week
+* 1,000,000 compiles per week
 * 1.5/sec average
 * 4/sec peak
 * 3000 short URLs/week

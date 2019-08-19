@@ -3,7 +3,7 @@
 
 * Intro & History
 * Assembly Primer
-* Top 5 Optimisations
+* Favourite Optimisations
 * Behind the Scenes
 * Stop and ask questions! <!-- .element: class="fragment" -->
 
@@ -14,23 +14,25 @@
 ## About me
 * Decade of making console games
 * Writing C++ tools
-* Google, YouTube mobile
+* Google, YouTube mobile</div><!-- .element: class="white-bg" -->
+
+
+<div>
+
+## Evolution: 2018
+
 * Finance
 * But then...<!-- .element: class="fragment" -->
 </div><!-- .element: class="white-bg" -->
 
 
 <div>
-## This happened...
 ![CE logo](images/CE.svg) <!-- .element: class="no-border stretch" -->
 </div><!-- .element: class="white-bg" -->
 
 
 <div>
 ## Origin Story
-
-* In 2012 I worked in low-latency trading
-* "Discussing" c++0x features<!-- .element: class="fragment" -->
 
 ```bash
 watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
@@ -64,28 +66,21 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div>
 
-## Evolution
-* 2012
+## Evolution: 2012-2014
   * Colouration & filtering
-  * D language support
-* 2013
-  * Battle hardening
   * More compilers
-* 2014
-  * goo.gl short links
+  * D language support
   * Rust support
+  * goo.gl short links
 
 </div><!-- .element: class="white-bg" -->
 
 
 <div>
 
-## Evolution
-* 2015
+## Evolution: 2015-2017
   * Binary support
-* 2016
   * GoldenLayout
-* 2017
   * Monaco
   * Libraries
 </div><!-- .element: class="white-bg" -->
@@ -93,34 +88,42 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div>
 
-## Evolution
-* 2018
+## Evolution: 2018
   * Unified languages
   * MS compilers
   * Tools windows
-* 2019
-  * Bug fixes
-  * Cache improvements
-  * 6502 support!
+
 </div><!-- .element: class="white-bg" -->
 
 
 <div>
 
-## Evolution
+## Evolution: 2019
+  * 6502 support! <!-- .element: class="fragment" -->
+  * Code execution! <!-- .element: class="fragment" -->
+  
+</div><!-- .element: class="white-bg" -->
 
-* Tools:
+
+<div>
+
+## Evolution: Tools
   * `clang-tidy`
   * `llvm-mca`
   * `pahole`
-* Views
-  * `opt` output
-  * clang AST & IR
-  * gcc Tree & IR
-  * control flow graph
+  * `clang-query`
+  * `readelf`
+  * `x86-to-6502`
 
 </div><!-- .element: class="white-bg" -->
 
 
-## How do _you_ use Compiler Explorer?
-<!-- .element: class="white-bg" -->
+<div>
+
+## Evolution : Views
+  * `opt` output
+  * clang AST & IR
+  * gcc Tree & IR
+  * Control flow graph
+
+</div><!-- .element: class="white-bg" -->

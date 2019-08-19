@@ -5,7 +5,7 @@
 * Learned so much
 * Doors opened
 * C++ community is amazing
-  * Thank you Rubén, Partouf, Chedy, Jared...
+  * Thank you Rubén, Partouf, Austin, Chedy, Jared...
 </div><!-- .element: class="white-bg" -->
 
 

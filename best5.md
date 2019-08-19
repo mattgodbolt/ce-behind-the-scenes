@@ -1,8 +1,8 @@
-## Top 5 Compiler Optimisations
+## Favourite Optimisations
 <!-- .element: class="white-bg" -->
 
 
-### 1. Division by a constant
+### Division by a constant
 
 ```cpp
 unsigned divideXbyY(unsigned x, unsigned y)
@@ -12,7 +12,7 @@ unsigned divideXbyY(unsigned x, unsigned y)
 ```
 
 
-### 2. Counting set bits
+### Counting set bits
 
 ```cpp
 int countSetBits(unsigned a)
@@ -29,7 +29,7 @@ int countSetBits(unsigned a)
 ```
 
 
-### 3. Chained conditionals
+### Chained conditionals
 
 ```cpp
 bool isspc(char c)
@@ -52,7 +52,7 @@ bool isspc(char c)
 ```
 
 
-### 4. Summation
+### Summation
 
 ```cpp
 
@@ -68,7 +68,7 @@ int sumToX(int x)
 ```
 
 
-## 5. Devirtualisation
+## Devirtualisation
 
 ```cpp
 /// g82:-O3 -march=haswell -fno-tree-vectorize

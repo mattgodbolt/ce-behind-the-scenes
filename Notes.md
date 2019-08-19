@@ -2,10 +2,19 @@
 
 ## Readying for CppCon
 
-* update stats for up-to-date
+* update stats for up-to-date - done
 * add a section on "power features of CE":
   * execution, new pane as well as normal
   * Herb surprised by #include URL and mouse-over asm
+
+So, what features to showcase?
+* multiview, stacking windows?
+* diff view
+* pahole
+* llvm-mca
+* mouse over
+* `#include` URLs
+* GCC and clang tree/RTL viewer
 
 ## From first presentation April 2019
 
