@@ -15,6 +15,7 @@ So, what features to showcase?
 * mouse over
 * `#include` URLs
 * GCC and clang tree/RTL viewer
+* other languages
 
 ## From first presentation April 2019
 

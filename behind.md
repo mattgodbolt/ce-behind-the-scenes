@@ -1,9 +1,12 @@
 ## Behind the Scenes
 <!-- .element: class="white-bg" -->
 
+---
+
 
 ![Server](images/CE_server_2.jpg)<!-- .element: height="500" -->
 
+---
 
 <div>
 
@@ -17,15 +20,18 @@
 
 </div><!-- .element: class="white-bg" -->
 
+---
 
 ![Diag](images/ce_aws.svg)<!-- .element: class="no-border" -->
 
+---
 
 ## CE stats
 <!-- .element: class="white-bg" -->
 
 ![Stats](images/all_compilations_stats.png)<!-- .element: class="no-border stretch white-bg" -->
 
+---
 
 <div>
 
@@ -38,13 +44,14 @@
 
 </div><!-- .element: class="white-bg" -->
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Compiler stats
 
 * 400+ compilers
-* 250+GB
+* 250+ GB
 
 <div class="lang-container">
 <div>Ada</div>
@@ -68,8 +75,11 @@
 <div>Zig</div>
 </div><!-- -->
 
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
+
+<div class="white-bg">
 
 ## Maintaining
 
@@ -89,6 +99,11 @@ admin-node ~> ce --env prod builds set_current 3979
 admin-node ~> ce --env prod instances restart
 ```
 
+</div>
+
+---
+
+<div class="white-bg">
 
 ## Compilers
 
@@ -97,6 +112,11 @@ admin-node ~> ce --env prod instances restart
 * [World's worst CI](https://godbolt.org/admin/builds.html)
 * Takes 4+hr/day on fast machine (c5d.4xlarge)
 
+</div>
+
+---
+
+<div class="white-bg">
 
 ## Monitoring
 
@@ -107,11 +127,17 @@ admin-node ~> ce --env prod instances restart
 * [sentry](https://sentry.io/organizations/compiler-explorer/issues) - javascript error aggregation
 * [StatusCake](https://app.statuscake.com/UptimeStatus.php?tid=1813107) - uptime monitoring
 
+</div>
+
+---
 
 ## When things go wrong
 
 ![Uptime](images/status.png)<!-- .element: height="500" -->
 
+---
+
+<div class="white-bg">
 
 ## When things go wrong
 
@@ -121,3 +147,5 @@ admin-node ~> ce --env prod instances restart
       ![Graph](images/EFS.png)<!-- .element: height="200" --></li>
 <li class=fragment>[S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)</li>
 </ul>
+
+</div>

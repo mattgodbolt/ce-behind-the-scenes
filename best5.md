@@ -1,8 +1,9 @@
 ## Favourite Optimisations
 <!-- .element: class="white-bg" -->
 
+---
 
-### Division by a constant
+### Division by a constant <!-- .element: class="white-bg" -->
 
 ```cpp
 unsigned divideXbyY(unsigned x, unsigned y)
@@ -11,8 +12,9 @@ unsigned divideXbyY(unsigned x, unsigned y)
 }
 ```
 
+---
 
-### Counting set bits
+### Counting set bits <!-- .element: class="white-bg" -->
 
 ```cpp
 int countSetBits(unsigned a)
@@ -28,8 +30,9 @@ int countSetBits(unsigned a)
 }
 ```
 
+---
 
-### Chained conditionals
+### Chained conditionals <!-- .element: class="white-bg" -->
 
 ```cpp
 bool isspc(char c)
@@ -41,6 +44,7 @@ bool isspc(char c)
 }
 ```
 
+---
 
 ```x86asm
   movabs rax, 0x100002600  ; 0b100000000000000000010011000000000
@@ -51,11 +55,11 @@ bool isspc(char c)
   and eax, 1               ; pick the lowest set bit
 ```
 
+---
 
-### Summation
+### Summation <!-- .element: class="white-bg" -->
 
 ```cpp
-
 int sumToX(int x)
 {
   int result = 0;
@@ -67,8 +71,9 @@ int sumToX(int x)
 }
 ```
 
+---
 
-## Devirtualisation
+## Devirtualisation <!-- .element: class="white-bg" -->
 
 ```cpp
 /// g82:-O3 -march=haswell -fno-tree-vectorize

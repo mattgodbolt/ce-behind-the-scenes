@@ -1,37 +1,40 @@
-<div>
-### Overview
+<div class="white-bg">
 
+### Overview
 * Intro & History
-* Assembly Primer
+* Hot Features
 * Favourite Optimisations
 * Behind the Scenes
 * Stop and ask questions! <!-- .element: class="fragment" -->
 
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
+    
+<div class="white-bg">
 
-<div>
 ## About me
+
 * Decade of making console games
 * Writing C++ tools
-* Google, YouTube mobile</div><!-- .element: class="white-bg" -->
-
-
-<div>
-
-## Evolution: 2018
-
+* Google, YouTube mobile
 * Finance
 * But then...<!-- .element: class="fragment" -->
-</div><!-- .element: class="white-bg" -->
 
+</div>
 
-<div>
+---
+
+<div class="white-bg">
+
 ![CE logo](images/CE.svg) <!-- .element: class="no-border stretch" -->
-</div><!-- .element: class="white-bg" -->
 
+</div>
 
-<div>
+---
+
+<div class="white-bg">
+
 ## Origin Story
 
 ```bash
@@ -41,14 +44,15 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 ```
 <!-- .element: class="fragment" -->
 
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
 
-## Live demo!
-<!-- .element: class="white-bg" -->
+<img src="images/ce-sh.png" width="2560" height="1440" style="height: 500px; width: auto;">
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Origin Story
 
@@ -56,15 +60,17 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 * But not pretty
 * TO THE WEB!<!-- .element: class="fragment" -->
 
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
 
 ## GCC Explorer!
 <!-- .element: class="white-bg" -->
 ![First version](images/first_working.png)<!-- .element: height="470" class="no-border" -->
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Evolution: 2012-2014
   * Colouration & filtering
@@ -73,39 +79,43 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
   * Rust support
   * goo.gl short links
 
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Evolution: 2015-2017
   * Binary support
   * GoldenLayout
   * Monaco
   * Libraries
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Evolution: 2018
   * Unified languages
   * MS compilers
   * Tools windows
 
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Evolution: 2019
   * 6502 support! <!-- .element: class="fragment" -->
   * Code execution! <!-- .element: class="fragment" -->
   
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Evolution: Tools
   * `clang-tidy`
@@ -115,10 +125,11 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
   * `readelf`
   * `x86-to-6502`
 
-</div><!-- .element: class="white-bg" -->
+</div>
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Evolution : Views
   * `opt` output
@@ -126,4 +137,4 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
   * gcc Tree & IR
   * Control flow graph
 
-</div><!-- .element: class="white-bg" -->
+</div>

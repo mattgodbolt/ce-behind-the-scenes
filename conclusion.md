@@ -1,4 +1,4 @@
-<div>
+<div class="white-bg">
 
 ## Conclusion
 
@@ -6,10 +6,12 @@
 * Doors opened
 * C++ community is amazing
   * Thank you Rubén, Partouf, Austin, Chedy, Jared...
-</div><!-- .element: class="white-bg" -->
+  
+</div>
 
+---
 
-<div>
+<div class="white-bg">
 
 ## Thank you!
 
@@ -19,4 +21,4 @@
 
 What questions do you have?
 
-</div><!-- .element: class="white-bg" -->
+</div>
