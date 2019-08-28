@@ -14,7 +14,7 @@ Notes read top (most recent)
 * TODO
   * FINALISE WHAT GOES INTO DEMO AND MAKE SHORT LINKS
     * Rust vs c++ "square"
-     * demos languages, diff mode, window mgmt
+     * demos languages, diff mode, window mgmt -- DONE
     * Load up sum optimised:
       - llvm-mca demo; llvm tool
     * info on ASM ctrl-f10
@@ -26,7 +26,7 @@ Notes read top (most recent)
     * `#include <url>`
   * Install and get working locally:
     * llvm-mca "analysis"
-    * clang-tidy
+    * clang-tidy -- DONE
   * Decide whether to drop whole "favourite optimisations", or only
     use them to show things above.
     - used divide to show off llvm-mca...
