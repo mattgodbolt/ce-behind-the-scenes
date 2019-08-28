@@ -13,7 +13,7 @@
     
 <div class="white-bg">
 
-## About me
+### About me
 
 * Decade of making console games
 * Writing C++ tools
@@ -35,7 +35,7 @@
 
 <div class="white-bg">
 
-## Origin Story
+### Origin Story
 
 ```bash
 watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
@@ -64,7 +64,7 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 ---
 
-## GCC Explorer!
+### GCC Explorer!
 <!-- .element: class="white-bg" -->
 ![First version](images/first_working.png)<!-- .element: height="470" class="no-border" -->
 
@@ -72,7 +72,7 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div class="white-bg">
 
-## Evolution: 2012-2014
+### Evolution: 2012-2014
   * Colouration & filtering
   * More compilers
   * D language support
@@ -85,7 +85,7 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div class="white-bg">
 
-## Evolution: 2015-2017
+### Evolution: 2015-2017
   * Binary support
   * GoldenLayout
   * Monaco
@@ -96,7 +96,7 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div class="white-bg">
 
-## Evolution: 2018
+### Evolution: 2018
   * Unified languages
   * MS compilers
   * Tools windows
@@ -107,34 +107,8 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div class="white-bg">
 
-## Evolution: 2019
+### Evolution: 2019
   * 6502 support! <!-- .element: class="fragment" -->
   * Code execution! <!-- .element: class="fragment" -->
   
-</div>
-
----
-
-<div class="white-bg">
-
-## Evolution: Tools
-  * `clang-tidy`
-  * `llvm-mca`
-  * `pahole`
-  * `clang-query`
-  * `readelf`
-  * `x86-to-6502`
-
-</div>
-
----
-
-<div class="white-bg">
-
-## Evolution : Views
-  * `opt` output
-  * clang AST & IR
-  * gcc Tree & IR
-  * Control flow graph
-
 </div>

@@ -1,5 +1,38 @@
 # Notes
 
+Notes read top (most recent)
+
+## First CppCon runthrough at home (1h5)
+
+* Timeline
+  * 10m to "2018"
+  * 18m was fiddling with llcm-mca
+  * roughly 30m to end of CE demo
+  * 44m to "summation"
+    * dropped summation and devirtualisation
+  * Behind the scenes took til 1.05, with improv'd isolation talk
+* TODO
+  * FINALISE WHAT GOES INTO DEMO AND MAKE SHORT LINKS
+    * Rust vs c++ "square"
+     * demos languages, diff mode, window mgmt
+    * Load up sum optimised:
+      - llvm-mca demo; llvm tool
+    * info on ASM ctrl-f10
+    * code higlighting ctrl-f10 toggle
+    * show:
+       * CFG
+       * clang opt view, ast
+       * gcc pass view
+    * `#include <url>`
+  * Install and get working locally:
+    * llvm-mca "analysis"
+    * clang-tidy
+  * Decide whether to drop whole "favourite optimisations", or only
+    use them to show things above.
+    - used divide to show off llvm-mca...
+  * Write "how sandboxing works" slide(s)
+  
+
 ## Readying for CppCon
 
 * update stats for up-to-date - done
