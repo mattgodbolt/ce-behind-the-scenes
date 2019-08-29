@@ -5,7 +5,6 @@
 * Hot Features
 * Favourite Optimisations
 * Behind the Scenes
-* Stop and ask questions! <!-- .element: class="fragment" -->
 
 </div>
 

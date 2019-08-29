@@ -16,7 +16,7 @@ Notes read top (most recent)
     * Rust vs c++ "square"
      * demos languages, diff mode, window mgmt -- DONE
     * Load up sum optimised:
-      - llvm-mca demo; llvm tool
+      - llvm-mca demo; llvm tool -- DONE
     * info on ASM ctrl-f10
     * code higlighting ctrl-f10 toggle
     * show:
@@ -25,12 +25,12 @@ Notes read top (most recent)
        * gcc pass view
     * `#include <url>`
   * Install and get working locally:
-    * llvm-mca "analysis"
+    * llvm-mca "analysis" -- DONE
     * clang-tidy -- DONE
   * Decide whether to drop whole "favourite optimisations", or only
     use them to show things above.
     - used divide to show off llvm-mca...
-  * Write "how sandboxing works" slide(s)
+  * Write "how sandboxing works" slide(s) -- DONE (ish)
   
 
 ## Readying for CppCon

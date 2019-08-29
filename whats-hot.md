@@ -1,5 +1,38 @@
 <div class="white-bg">
 
+### Hot Features
+
+</div>
+
+---
+
+<div class="white-bg">
+
+### Execution support
+
+[Link](http://localhost:10240/#g:!((g:!((g:!((h:codeEditor,i:(fontScale:2.23,j:1,lang:c%2B%2B,source:'%23include+%3Ciostream%3E%0A%0Aint+main(int+argc,+const+char+*argv%5B%5D)+%7B%0A++++std::cout+%3C%3C+%22Hello,+world%5Cn%22%3B%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((g:!((h:compiler,i:(compiler:g91,filters:(b:'0',binary:'1',commentOnly:'0',demangle:'0',directives:'0',execute:'0',intel:'0',libraryCode:'1',trim:'1'),fontScale:2.23,lang:c%2B%2B,libs:!(),options:'-O2',source:1),l:'5',n:'0',o:'x86-64+gcc+9.1+(Editor+%231,+Compiler+%231)+C%2B%2B',t:'0')),k:50,l:'4',m:50,n:'0',o:'',s:0,t:'0'),(g:!((h:output,i:(compiler:1,editor:1,fontScale:2.23,wrap:'1'),l:'5',n:'0',o:'%231+with+x86-64+gcc+9.1',t:'0')),header:(),l:'4',m:50,n:'0',o:'',s:0,t:'0')),k:50,l:'3',n:'0',o:'',t:'0')),l:'2',n:'0',o:'',t:'0')),version:4)
+
+
+<aside class="notes">
+
+* Show hello world.
+* Explain why this is great, but also why it sucks
+* Move to execution view and change to 
+  if (argc == 2) {
+    std::cout << "Hello, " << argv[1] << "\n";
+  } else {
+    std::cout << "Hello, world\n";
+  }
+[Link](http://localhost:10240/#g:!((g:!((g:!((h:codeEditor,i:(fontScale:2.23,j:1,lang:c%2B%2B,source:'%23include+%3Ciostream%3E%0A%0Aint+main(int+argc,+const+char+*argv%5B%5D)+%7B%0A++if+(argc+%3D%3D+2)+%7B%0A++++std::cout+%3C%3C+%22Hello,+%22+%3C%3C+argv%5B1%5D+%3C%3C+%22%5Cn%22%3B%0A++%7D+else+%7B%0A++++std::cout+%3C%3C+%22Hello,+world%5Cn%22%3B%0A++%7D%0A%7D'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:50,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:executor,i:(argsPanelShown:'1',compilationPanelShown:'0',compiler:g91,compilerOutShown:'0',execArgs:'',execStdin:'',fontScale:2.23,lang:c%2B%2B,libs:!(),options:'-O2',source:1,stdinPanelShown:'1'),l:'5',n:'0',o:'x86-64+gcc+9.1+Executor+(Editor+%231)+C%2B%2B',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4)
+
+</aside>
+
+</div>
+
+---
+
+<div class="white-bg">
+
 ### Unified languages
 
 [Link](http://localhost:10240/#g:!((g:!((g:!((h:codeEditor,i:(fontScale:2.2290251120639994,j:1,lang:rust,source:'//+Type+your+code+here,+or+load+an+example.%0Apub+fn+square(num:+i32)+-%3E+i32+%7B%0A++++num+*+num%0A%7D%0A'),l:'5',n:'0',o:'Rust+source+%231',t:'0')),k:50,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:r1330,filters:(b:'0',binary:'1',commentOnly:'0',demangle:'0',directives:'0',execute:'1',intel:'0',libraryCode:'1',trim:'1'),fontScale:2.2290251120639994,lang:rust,libs:!(),options:'-O',source:1),l:'5',n:'0',o:'rustc+1.33.0+(Editor+%231,+Compiler+%231)+Rust',t:'0')),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4)

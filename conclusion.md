@@ -1,6 +1,17 @@
 <div class="white-bg">
 
-## Conclusion
+### The Future
+
+* Improve execution
+* Bug fixing
+* 2020 goal: decent small-screen support<!-- .element: class="fragment" -->
+  
+</div>
+
+---
+<div class="white-bg">
+
+### Conclusion
 
 * Learned so much
 * Doors opened

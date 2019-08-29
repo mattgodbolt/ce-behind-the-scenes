@@ -10,7 +10,7 @@
 
 <div>
 
-## But really...
+## More boringly...
 
 * node.js
 * Amazon Web Services
@@ -118,6 +118,19 @@ admin-node ~> ce --env prod instances restart
 
 <div class="white-bg">
 
+## Security
+
+* Compilers
+* User execution
+* [firejail](https://github.com/netblue30/firejail)
+* [nsjail](https://github.com/google/nsjail)
+
+</div>
+
+---
+
+<div class="white-bg">
+
 ## Monitoring
 
 * [papertrail](https://papertrailapp.com/events) - live event monitoring
@@ -131,7 +144,7 @@ admin-node ~> ce --env prod instances restart
 
 ---
 
-## When things go wrong
+## When things go wrong<!-- .element: class="white-bg" -->
 
 ![Uptime](images/status.png)<!-- .element: height="500" -->
 
@@ -142,10 +155,22 @@ admin-node ~> ce --env prod instances restart
 ## When things go wrong
 
 <ul>
-<li>[Bad config](https://cpplang.slack.com/archives/C7ETT0ZRP/p1534332219000100) (August 2018)</li>
-<li class=fragment>[EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<p>
-      ![Graph](images/EFS.png)<!-- .element: height="200" --></li>
-<li class=fragment>[S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)</li>
+<li>
+
+[Bad config](https://cpplang.slack.com/archives/C7ETT0ZRP/p1534332219000100) (August 2018)
+
+</li>
+<li class=fragment>
+
+[EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<p>
+      ![Graph](images/EFS.png)<!-- .element: height="200" -->
+      
+</li>
+<li class=fragment>
+
+[S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)
+
+</li>
 </ul>
 
 </div>
