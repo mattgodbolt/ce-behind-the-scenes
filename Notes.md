@@ -2,6 +2,12 @@
 
 Notes read top (most recent)
 
+## Second CppCon runthrough at work (1h40
+* Audience didn't know much about C++ or the site, so took longer
+* BUT still skipped over favourite opts....so...culled them
+* Need to roll some good optimisation examples into the "what's hot"
+* Steer -> show conformance view
+
 ## First CppCon runthrough at home (1h5)
 
 * Timeline

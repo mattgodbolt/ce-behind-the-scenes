@@ -3,7 +3,6 @@
 ### Overview
 * Intro & History
 * Hot Features
-* Favourite Optimisations
 * Behind the Scenes
 
 </div>
