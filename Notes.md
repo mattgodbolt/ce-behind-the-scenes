@@ -2,6 +2,20 @@
 
 Notes read top (most recent)
 
+## hotel room runthrough
+* 10m hot features
+* 20m to demo'ing CFG
+* 28m behind scenes
+* 52m to Q
+flowed well, needs more practice on the demo part
+
+## Third runthru at home 55m
+* Timeline
+  - 12m to "Hot Features"
+  - 31m to "Behind Scenes"
+  - 55m to Qs
+* Went well
+
 ## Second CppCon runthrough at work (1h40
 * Audience didn't know much about C++ or the site, so took longer
 * BUT still skipped over favourite opts....so...culled them

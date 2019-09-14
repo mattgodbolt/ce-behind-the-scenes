@@ -2,11 +2,6 @@
 
 ### Hot Features
 
-TODO WEAVE MORE COOL EXAMPLES OF CODE HERE!!!!
-
-* Compiler viewers (RTL/LLVM IR/Parse)
-* `#include <https://...>`
-
 </div>
 
 ---
@@ -113,12 +108,16 @@ bool exists(const fs::path &filePath) {
 
 <div class="white-bg">
 
-### Other tools...
+### But wait there's more:
 
-* clang-tidy
-* clang-query
-* pahole
-* readelf
-* x86-to-6502
+* `#include <https://...>`
+* Tools
+  * clang-tidy, clang-query
+  * pahole
+  * readelf
+  * x86-to-6502
+* Views
+    * GCC RTL/tree
+    * Clang IR/parse tree
 
 </div>

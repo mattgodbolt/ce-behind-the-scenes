@@ -33,6 +33,13 @@
 
 ---
 
+## CE stats
+<!-- .element: class="white-bg" -->
+
+![Stats](images/sandbox-exec.png)<!-- .element: class="no-border stretch white-bg" -->
+
+---
+
 <div>
 
 ## CE stats
@@ -40,7 +47,8 @@
 * 1,000,000 compiles per week
 * 1.5/sec average
 * 4/sec peak
-* 3000 short URLs/week
+* 80,000 executions per week
+* 3000 short URLs per week
 
 </div><!-- .element: class="white-bg" -->
 
@@ -169,6 +177,11 @@ admin-node ~> ce --env prod instances restart
 <li class=fragment>
 
 [S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)
+
+</li>
+<li class=fragment>
+
+[EFS/NFS/bind mount/systemd](https://patchwork.kernel.org/patch/10104257/) catastrophe (September 2019)
 
 </li>
 </ul>
