@@ -160,7 +160,7 @@ admin-node ~> ce --env prod instances restart
 
 <div class="white-bg">
 
-## When things go wrong
+#### When things go wrong
 
 <ul>
 <li>
