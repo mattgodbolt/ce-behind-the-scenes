@@ -44,11 +44,10 @@
 
 ## CE stats
 
-* 1,000,000 compiles per week
-* 1.5/sec average
-* 4/sec peak
-* 80,000 executions per week
-* 3000 short URLs per week
+* 1,600,000 compiles per week
+* ~2.5/sec average, 6.1/sec peak
+* 200,000 executions per week
+* 7000 short URLs per week
 
 </div><!-- .element: class="white-bg" -->
 
@@ -59,7 +58,7 @@
 ## Compiler stats
 
 * 400+ compilers
-* 250+ GB
+* 500+ GB
 
 <div class="lang-container">
 <div>Ada</div>
@@ -181,7 +180,7 @@ admin-node ~> ce --env prod instances restart
 </li>
 <li class=fragment>
 
-[EFS/NFS/bind mount/systemd](https://patchwork.kernel.org/patch/10104257/) catastrophe (September 2019)
+[EFS/NFS/bind mount/systemd](https://patchwork.kernel.org/patch/10104257/) catastrophe (September 2019*)
 
 </li>
 </ul>

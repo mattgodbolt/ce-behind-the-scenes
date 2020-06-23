@@ -37,8 +37,9 @@ digraph compiler_explorer {
     s3 [shape = folder];
     dynamodb [shape = cylinder];
 
-    outside -> cloudfront;
-    cloudfront -> alb;
+    outside -> cloudfront [label="https"];
+    cloudfront -> alb [label="dynamic content"];
+    cloudfront -> s3 [label="static content"];
 
     alb -> ce_node_1 [lhead=cluster_ce_nodes];
     alb -> ce_node_2 [lhead=cluster_ce_nodes];
@@ -50,7 +51,7 @@ digraph compiler_explorer {
     admin->build;
     build->s3;
 
-    admin -> {efs, s3, dynamodb };
+    admin -> {efs, s3, dynamodb};
     { ce_node_1, ce_node_2} -> admin [ltail=cluster_ce_nodes];
     { ce_node_1, ce_node_2} -> efs [ltail=cluster_ce_nodes];
     { ce_node_1, ce_node_2} -> s3 [ltail=cluster_ce_nodes];

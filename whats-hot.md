@@ -1,8 +1,36 @@
 <div class="white-bg">
 
-### Hot Features
+### Lesser-known Features
 
 </div>
+
+---
+
+<div class="white-bg">
+
+### Fewer-known Features
+
+</div>
+
+---
+
+### Control Flow Graph <!-- .element: class="white-bg" -->
+
+```cpp
+int countSetBits(unsigned value)
+{
+  int count = 0;
+  while (value != 0)
+  {
+    count++;
+    // clear bottom set bit
+    value &= (value - 1);
+  }
+  return count;
+}
+```
+
+[Link](https://godbolt.org/#g:!((g:!((g:!((h:codeEditor,i:(fontScale:2.5,j:1,lang:c%2B%2B,source:'int+countSetBits(unsigned+a)%0A%7B%0A++int+count+%3D+0%3B%0A++while+(a+!!%3D+0)%0A++%7B%0A++++count%2B%2B%3B%0A++++//+clear+bottom+set+bit%0A++++a+%26%3D+(a+-+1)%3B%0A++%7D%0A++return+count%3B%0A%7D%0A'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:33.333333333333336,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g82,filters:(b:'0',binary:'1',commentOnly:'0',demangle:'0',directives:'0',execute:'1',intel:'0',libraryCode:'1',trim:'0'),fontScale:3,lang:c%2B%2B,libs:!(),options:'-O2+-march%3Dhaswell+-Wall+-Wextra+-pedantic',source:1),l:'5',n:'0',o:'x86-64+gcc+8.2+(Editor+%231,+Compiler+%231)+C%2B%2B',t:'0')),k:33.333333333333336,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:cfg,i:(editorid:1,j:1,options:(navigation:'1',physics:'1'),pos:(___x:0,___y:-7),scale:1,selectedFn:'countSetBits(unsigned+int):'),l:'5',n:'0',o:'x86-64+gcc+8.2+Graph+Viewer+(Editor+%231,+Compiler+%231)',t:'0')),k:33.33333333333333,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4)
 
 ---
 
@@ -51,26 +79,6 @@
 
 ---
 
-### Control Flow Graph <!-- .element: class="white-bg" -->
-
-```cpp
-int countSetBits(unsigned value)
-{
-  int count = 0;
-  while (value != 0)
-  {
-    count++;
-    // clear bottom set bit
-    value &= (value - 1);
-  }
-  return count;
-}
-```
-
-[Link](https://godbolt.org/#g:!((g:!((g:!((h:codeEditor,i:(fontScale:2.5,j:1,lang:c%2B%2B,source:'int+countSetBits(unsigned+a)%0A%7B%0A++int+count+%3D+0%3B%0A++while+(a+!!%3D+0)%0A++%7B%0A++++count%2B%2B%3B%0A++++//+clear+bottom+set+bit%0A++++a+%26%3D+(a+-+1)%3B%0A++%7D%0A++return+count%3B%0A%7D%0A'),l:'5',n:'0',o:'C%2B%2B+source+%231',t:'0')),k:33.333333333333336,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:g82,filters:(b:'0',binary:'1',commentOnly:'0',demangle:'0',directives:'0',execute:'1',intel:'0',libraryCode:'1',trim:'0'),fontScale:3,lang:c%2B%2B,libs:!(),options:'-O2+-march%3Dhaswell+-Wall+-Wextra+-pedantic',source:1),l:'5',n:'0',o:'x86-64+gcc+8.2+(Editor+%231,+Compiler+%231)+C%2B%2B',t:'0')),k:33.333333333333336,l:'4',n:'0',o:'',s:0,t:'0'),(g:!((h:cfg,i:(editorid:1,j:1,options:(navigation:'1',physics:'1'),pos:(___x:0,___y:-7),scale:1,selectedFn:'countSetBits(unsigned+int):'),l:'5',n:'0',o:'x86-64+gcc+8.2+Graph+Viewer+(Editor+%231,+Compiler+%231)',t:'0')),k:33.33333333333333,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4)
-
----
-
 ### LLVM-MCA Tool<!-- .element: class="white-bg" -->
 
 ```cpp
@@ -116,6 +124,7 @@ bool exists(const fs::path &filePath) {
   * pahole
   * readelf
   * x86-to-6502
+  * PVS Studio
 * Views
     * GCC RTL/tree
     * Clang IR/parse tree
