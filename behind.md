@@ -165,11 +165,12 @@ admin-node ~> ce --env prod instances restart
 <li>
 
 [Bad config](https://cpplang.slack.com/archives/C7ETT0ZRP/p1534332219000100) (August 2018)
+<br><img class=fragment src="images/aug.png">
 
 </li>
 <li class=fragment>
 
-[EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<p>
+[EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<br>
       ![Graph](images/EFS.png)<!-- .element: height="200" -->
       
 </li>

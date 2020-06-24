@@ -37,7 +37,7 @@
 
 ### Compiler Explorer?
 
-* [godbolt.org](https://godbolt.org/z/BcrSDt)
+* [godbolt.org](https://godbolt.org/z/AkUFit)
 * Why is it useful?
 * How it it used?
 
