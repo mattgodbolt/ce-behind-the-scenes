@@ -15,7 +15,7 @@
 * node.js
 * Amazon Web Services
 * CloudFront / Load Balancers
-* 3-5 EC2 instances
+* 2-16 EC2 instances
 * EFS / S3 / DynamoDb
 
 </div><!-- .element: class="white-bg" -->
@@ -44,11 +44,21 @@
 
 ## CE stats
 
-* 1,000,000 compiles per week
-* 1.5/sec average
-* 4/sec peak
-* 80,000 executions per week
-* 3000 short URLs per week
+[Live stats](https://ce.grafana.net) (sadly not public)
+
+</div><!-- .element: class="white-bg" -->
+
+---
+
+<div>
+
+## CE stats
+
+* 2,500,000 compiles per week
+* 4.3/sec average
+* 10/sec peak
+* 600,000 executions per week
+* 8,000 short URLs per week
 
 </div><!-- .element: class="white-bg" -->
 
@@ -58,26 +68,28 @@
 
 ## Compiler stats
 
-* 400+ compilers
-* 250+ GB
+* 600+ compilers
+* 0.77TB
 
 <div class="lang-container">
 <div>Ada</div>
 <div>Analysis</div>
 <div>Assembly</div>
 <div>C</div>
-<div>C++</div>
+<div>C++ ("Cppx", "gold", "blue")</div>
 <div>Clean</div>
-<div>Cppx</div>
 <div>CUDA</div>
 <div>D</div>
 <div>Fortran</div>
 <div>Go</div>
 <div>Haskell</div>
 <div>ispc</div>
+<div>Java</div>
 <div>LLVM IR</div>
+<div>Nim</div>
 <div>OCaml</div>
 <div>Pascal</div>
+<div>Python</div>
 <div>Rust</div>
 <div>Swift</div>
 <div>Zig</div>
@@ -130,7 +142,6 @@ admin-node ~> ce --env prod instances restart
 
 * Compilers
 * User execution
-* [firejail](https://github.com/netblue30/firejail)
 * [nsjail](https://github.com/google/nsjail)
 
 </div>
@@ -144,6 +155,7 @@ admin-node ~> ce --env prod instances restart
 * [papertrail](https://papertrailapp.com/events) - live event monitoring
 * [AWS Dashboard](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#dashboards:name=CompilerExplorer)
 * [stathat](https://www.stathat.com/v) - aggregate statistics
+* [Grafana](https://ce.grafana.net) - more fine-grained stats
 * [Google Analytics](https://analytics.google.com/analytics/web/?hl=en-GB&pli=1#/report/visitors-overview/a55180w58851134p60096530/)
 * [sentry](https://sentry.io/organizations/compiler-explorer/issues) - javascript error aggregation
 * [StatusCake](https://app.statuscake.com/UptimeStatus.php?tid=1813107) - uptime monitoring
@@ -152,10 +164,17 @@ admin-node ~> ce --env prod instances restart
 
 ---
 
-## When things go wrong<!-- .element: class="white-bg" -->
+<div>
+
+## When things go wrong
 
 ![Uptime](images/status.png)<!-- .element: height="500" -->
 
+* 592m downtime since 2017-01-23
+* 99.99956% uptime
+* (slightly cheating)
+
+</div><!-- .element: class="white-bg" -->
 ---
 
 <div class="white-bg">

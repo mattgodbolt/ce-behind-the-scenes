@@ -2,10 +2,15 @@
 
 ### The Future
 
-* Improve execution
-* Bug fixing
-* 2020 goal: decent small-screen support<!-- .element: class="fragment" -->
-  
+* Lots of behind the scenes
+    - Easier to add libraries, compilers
+* Login support
+    - Shared state (maybe?)
+    - List & manage shared links
+    - (maybe) higher limits for logged-in users
+    - MAYBE user links: godbolt.org/u/lefticus/your-id-here
+    - **NEVER FREEMIUM**
+
 </div>
 
 ---
@@ -16,8 +21,8 @@
 * Learned so much
 * Doors opened
 * C++ community is amazing
-  * Thank you Rubén, Partouf, Austin, Chedy, Jared...
-  
+    * Thank you Partouf, Austin, Rubén, and many more...
+
 </div>
 
 ---
@@ -26,8 +31,8 @@
 
 ## Thank you!
 
-* [Main Github repo](https://github.com/mattgodbolt/compiler-explorer)
-* [Image Github repo](https://github.com/mattgodbolt/compiler-explorer-image)
+* [Main Github repo](https://github.com/compiler-explorer/compiler-explorer)
+* [Image Github repo](https://github.com/compiler-explorer/compiler-explorer-image)
 * [Patreon](https://patreon.com/mattgodbolt)
 
 What questions do you have?

@@ -1,9 +1,22 @@
 <div class="white-bg">
 
-### Overview
-* Intro & History
-* Hot Features
-* Behind the Scenes
+### The State of Compiler Explorer
+
+<div class="w50">
+
+#### Illinois
+
+* Capital: Springfield
+* Population: 12.67 million
+* 25<sup>th</sup> largest area
+
+</div>
+
+<div class="w50">
+
+![Illinois](images/illinois.png)<!-- .element: class="no-border" height="400px"-->
+
+</div>
 
 </div>
 
@@ -46,7 +59,7 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 ---
 
-<img src="images/ce-sh.png" width="2560" height="1440" style="height: 500px; width: auto;">
+<img src="images/ce-sh.png" alt="shell sript" width="2560" height="1440" style="height: 500px; width: auto;">
 
 ---
 
@@ -66,47 +79,5 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 <!-- .element: class="white-bg" -->
 ![First version](images/first_working.png)<!-- .element: height="470" class="no-border" -->
 
----
-
-<div class="white-bg">
-
-### Evolution: 2012-2014
-  * Colouration & filtering
-  * More compilers
-  * D language support
-  * Rust support
-  * goo.gl short links
-
-</div>
 
 ---
-
-<div class="white-bg">
-
-### Evolution: 2015-2017
-  * Binary support
-  * GoldenLayout
-  * Monaco
-  * Libraries
-</div>
-
----
-
-<div class="white-bg">
-
-### Evolution: 2018
-  * Unified languages
-  * MS compilers
-  * Tools windows
-
-</div>
-
----
-
-<div class="white-bg">
-
-### Evolution: 2019
-  * 6502 support! <!-- .element: class="fragment" -->
-  * Code execution! <!-- .element: class="fragment" -->
-  
-</div>
