@@ -1,29 +1,5 @@
 <div class="white-bg">
 
-### The State of Compiler Explorer
-
-<div class="w50">
-
-#### Illinois
-
-* Capital: Springfield
-* Population: 12.67 million
-* 25<sup>th</sup> largest area
-
-</div>
-
-<div class="w50">
-
-![Illinois](images/illinois.png)<!-- .element: class="no-border" height="400px"-->
-
-</div>
-
-</div>
-
----
-    
-<div class="white-bg">
-
 ### About me
 
 * Decade of making console games
@@ -76,8 +52,6 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 ---
 
 ### GCC Explorer!
+
 <!-- .element: class="white-bg" -->
 ![First version](images/first_working.png)<!-- .element: height="470" class="no-border" -->
-
-
----

@@ -15,8 +15,9 @@
 * node.js
 * Amazon Web Services
 * CloudFront / Load Balancers
-* 2-16 EC2 instances
+* 3-16 EC2 instances
 * EFS / S3 / DynamoDb
+* Custom GH runners
 
 </div><!-- .element: class="white-bg" -->
 
@@ -44,7 +45,7 @@
 
 ## CE stats
 
-[Live stats](https://ce.grafana.net) (sadly not public)
+[Live stats](https://ce.grafana.net) (sadly not public...yet)
 
 </div><!-- .element: class="white-bg" -->
 
@@ -54,11 +55,11 @@
 
 ## CE stats
 
-* 2,500,000 compiles per week
-* 4.3/sec average
+* 3,000,000 compiles per week
+* 5/sec average
 * 10/sec peak
 * 600,000 executions per week
-* 8,000 short URLs per week
+* 6,000 short URLs per week
 
 </div><!-- .element: class="white-bg" -->
 
@@ -68,14 +69,15 @@
 
 ## Compiler stats
 
-* 600+ compilers
-* 0.77TB
+* 800+ compilers
+* 1.2TB
 
 <div class="lang-container">
 <div>Ada</div>
 <div>Analysis</div>
 <div>Assembly</div>
 <div>C</div>
+<div>Carbon</div>
 <div>C++ ("Cppx", "gold", "blue")</div>
 <div>Clean</div>
 <div>CUDA</div>
