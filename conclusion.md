@@ -2,14 +2,11 @@
 
 ### The Future
 
-* Lots of behind the scenes
-    - Easier to add libraries, compilers
-* Login support
-    - Shared state (maybe?)
-    - List & manage shared links
-    - (maybe) higher limits for logged-in users
-    - MAYBE user links: godbolt.org/u/lefticus/your-id-here
-    - **NEVER FREEMIUM**
+- More languages
+- Better GPU support
+- Improve Windows compiler support
+- New architectures?
+- Faster and less error prone deployment
 
 </div>
 

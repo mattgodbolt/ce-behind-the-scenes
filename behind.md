@@ -45,7 +45,7 @@
 
 ## CE stats
 
-[Live stats](https://ce.grafana.net) (sadly not public...yet)
+[stats.compiler-explorer.com](https://stats.compiler-explorer.com)
 
 </div><!-- .element: class="white-bg" -->
 
@@ -106,19 +106,19 @@
 ## Maintaining
 
 ```
-admin-node ~> ce --env prod instances list
-Address          State      Type       ELB     Service  Version       
-34.226.244.207   running    t3.medium  healthy running  3965 (master) 
-3.91.14.221      running    c5.large   healthy running  3965 (master) 
+admin-node ~> ce --env prod instances status
+Address       State    Type       ELB     Service  Version       
+172.30.0.151  running  c6i.large  healthy running  gh-3952 (main)
+172.30.4.9    running  c5a.large  healthy running  gh-3952 (main)
 
 admin-node ~> ce --env prod builds list
 Live  Branch     Version    Size       Hash          
- -->  master     3965       58.2MiB    969925..8b69c5
-      master     3979       58.2MiB    9410c2..fbc044
-      policy-... 3983       58.2MiB    27eccb..62da61
+ -->  main       gh-3952    48.4MiB    b0046e..dc35cd
+      main       gh-3986    48.4MiB    a3327d..877a20
+      mg/testing gh-3668    48.6MiB    8b7f7e..b212f3
 
-admin-node ~> ce --env prod builds set_current 3979
-admin-node ~> ce --env prod instances restart
+admin-node ~> ce --env prod builds set_current gh-3986
+admin-node ~> ce --env prod environment refresh
 ```
 
 </div>
@@ -131,8 +131,8 @@ admin-node ~> ce --env prod instances restart
 
 * Built with custom docker containers
 * Daily process
-* [World's worst CI](https://godbolt.org/admin/builds.html)
-* Takes 4+hr/day on fast machine (c5d.4xlarge)
+* Custom [GH actions runners](https://github.com/compiler-explorer/compiler-workflows/actions)
+* Runs on 8xlarge and 16xlarge instances
 
 </div>
 
@@ -166,17 +166,18 @@ admin-node ~> ce --env prod instances restart
 
 ---
 
-<div>
+<div class="white-bg">
 
 ## When things go wrong
 
 ![Uptime](images/status.png)<!-- .element: height="500" -->
 
-* 592m downtime since 2017-01-23
+* ~10h downtime since 2017-01-23
 * 99.99956% uptime
-* (slightly cheating)
+* (real answer is more like 70h)
 
-</div><!-- .element: class="white-bg" -->
+</div>
+
 ---
 
 <div class="white-bg">

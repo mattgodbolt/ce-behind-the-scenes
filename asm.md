@@ -10,6 +10,7 @@
 Ash nazg durbatulûk, ash nazg gimbatul,
 Ash nazg thrakatulûk agh burzum-ishi krimpatul.
 </aside>
+</div>
 
 
 ### x86-64 Assembly
@@ -36,34 +37,34 @@ Ash nazg thrakatulûk agh burzum-ishi krimpatul.
 <!--- .element: class="white-bg" -->
 
 <div class="w30 white-bg"><ul class="instr fragment highlight-current-red">
-<li>`mov`</li>
-<li>`movzx`</li>
-<li>`movsxd`</li>
-<li>`lea`</li>
+<li><code>mov</code></li>
+<li><code>movzx</code></li>
+<li><code>movsxd</code></li>
+<li><code>lea</code></li>
 </ul><ul class="instr fragment highlight-current-red">
-<li>`call`</li>
-<li>`ret`</li>
-<li>`jmp`</li>
+<li><code>call</code></li>
+<li><code>ret</code></li>
+<li><code>jmp</code></li>
 </ul></div>
 
 <div class="w30 white-bg"><ul class="instr fragment highlight-current-red">
-<li>`push`</li>
-<li>`pop`</li>
+<li><code>push</code></li>
+<li><code>pop</code></li>
 </ul><ul class="instr fragment highlight-current-red">
-<li>`cmp`</li>
-<li>`test`</li>
-<li>`je`</li>
-<li>`jne`</li>
+<li><code>cmp</code></li>
+<li><code>test</code></li>
+<li><code>je</code></li>
+<li><code>jne</code></li>
 </ul></div>
 
 <div class="w30 white-bg"><ul class="instr fragment highlight-current-red">
-<li>`and`</li>
-<li>`xor`</li>
-<li>`add`</li>
-<li>`sub`</li>
-<li>`shl`</li>
-<li>`shr`</li>
-<li>`sar`</li>
+<li><code>and</code></li>
+<li><code>xor</code></li>
+<li><code>add</code></li>
+<li><code>sub</code></li>
+<li><code>shl</code></li>
+<li><code>shr</code></li>
+<li><code>sar</code></li>
 </ul></div>
 
 <div><br><br></div>
@@ -96,12 +97,12 @@ And many, many more...
 
 <div class="white-bg">
 <ul>
-<li>`rax` (return value)</li> 
-<li>`rdi` (1st param)</li> 
-<li>`rsi` (2nd param)</li> 
-<li>`rdx` (3rd param)</li>
-<li>`rbx` `rcx` `rbp` `r8-r15` `rsp`</li>
-<li>`xmm0-15` (`ymm0-15`... `zmm0-31`... `k0-7`)</li>
+<li><code>rax</code> (return value)</li> 
+<li><code>rdi</code> (1st param)</li> 
+<li><code>rsi</code> (2nd param)</li> 
+<li><code>rdx</code> (3rd param)</li>
+<li><code>rbx</code> <code>rcx</code> <code>rbp</code> <code>r8-r15</code> <code>rsp</code></li>
+<li><code>xmm0-15</code> (<code>ymm0-15</code>... <code>zmm0-31</code>... <code>k0-7</code>)</li>
 </ul></div>
 
 

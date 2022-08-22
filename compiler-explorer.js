@@ -82,7 +82,7 @@
             };
             let ceFragment = encodeURIComponent(JSON.stringify(obj));
 
-            const isLocal = !!window.location.host.match(/localhost/gi);
+            const isLocal = false;//!!window.location.host.match(/localhost/gi);
             const baseUrl = isLocal ? 'http://localhost:10240/' : 'https://godbolt.org/';
 
             element.onclick = (evt) => {
