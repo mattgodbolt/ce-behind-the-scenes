@@ -342,7 +342,7 @@
 <g id="edge10" class="edge">
 <title>lambda_stats&#45;&gt;dynamodb</title>
 <path fill="none" stroke="black" d="M317.55,-356.79C322.44,-331.89 331.66,-294.53 347,-265 377.34,-206.58 429.4,-149.25 460.47,-117.77"/>
-<polygon fill="black" stroke="black" points="314.1,-356.17 315.71,-366.64 320.98,-357.45 314.1,-356.17"/>
+<polygon fill="black" stroke="black" points="316.98,-348.41 316.71,-359 323.52,-350.89 316.98,-348.41"/>
 <polygon fill="black" stroke="black" points="463.3,-119.88 467.89,-110.33 458.35,-114.94 463.3,-119.88"/>
 </g>
 <!-- action_runner_2 -->

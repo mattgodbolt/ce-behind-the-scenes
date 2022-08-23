@@ -60,7 +60,7 @@ digraph compiler_explorer {
     alb -> ce_node_1 [lhead=cluster_ce_nodes];
     alb -> staging_node_1 [lhead=cluster_staging_nodes];
 
-    lambda_stats -> dynamodb [ltail=cluster_gh_actions];
+    lambda_stats -> dynamodb [ltail=cluster_lambda];
     action_runner_1 -> s3 [ltail=cluster_gh_actions];
 
     build [ shape=box, label="Legacy Builder\nEC2", color="#ddddff:#aaaacc"];
