@@ -7,6 +7,7 @@ digraph compiler_explorer {
     outside [shape = parallelogram, rank="source"];
 
     cloudfront [shape = oval];
+    sqs [shape = oval];
 
     alb [shape = box, label="Application Load Balancer"];
 
@@ -15,21 +16,30 @@ digraph compiler_explorer {
         style = filled;
         color="#99dd99";
 
-        ce_node_1 [shape = box, label="EC2"];
         ce_node_2 [shape = box, label="EC2"];
+        ce_node_1 [shape = box, label="EC2"];
         ce_node_3 [shape = box, label="EC2"];
-    }
-    subgraph cluster_beta_nodes {
-        label="Beta";
-        style = filled;
-        color="#dd99dd";
-        beta_node_1 [shape = box, label="EC2"];
     }
     subgraph cluster_staging_nodes {
         label="Staging";
         style = filled;
         color="#99dddd";
         staging_node_1 [shape = box, label="EC2"];
+    }
+    subgraph cluster_lambda {
+        label="Lambda";
+        style = filled;
+        color="#44aa88";
+        gh_actions [shape = box, label="GH Actions"];
+        lambda_stats [shape = box, label="Stats"];
+    }
+    subgraph cluster_gh_actions {
+        label="Actions Runners";
+        style = filled;
+        color="#7799ee";
+        action_runner_2 [shape = box, label="Runner\nEC2"];
+        action_runner_1 [shape = box, label="Runner\nEC2"];
+        action_runner_3 [shape = box, label="Runner\nEC2"];
     }
 
     admin [shape = box, rank="sink", label="admin\nEC2", color="#ddddff:#aaaacc"];
@@ -38,30 +48,31 @@ digraph compiler_explorer {
     s3 [shape = folder];
     dynamodb [shape = cylinder];
 
+    gh_actions -> sqs;
+    sqs -> action_runner_1 [lhead=cluster_gh_actions];
+
     outside -> cloudfront [label="https"];
-    cloudfront -> alb [label="dynamic content"];
-    cloudfront -> s3 [label="static content"];
+    cloudfront -> alb [label="dynamic content\ncompiler-explorer.com"];
+    cloudfront -> s3 [label="static content\nce-cdn.net"];
+    cloudfront -> lambda_stats [label="stats"];
+    cloudfront -> gh_actions [label="github.com"];
 
     alb -> ce_node_1 [lhead=cluster_ce_nodes];
-    alb -> ce_node_2 [lhead=cluster_ce_nodes];
-    alb -> ce_node_3 [lhead=cluster_ce_nodes];
-    alb -> beta_node_1 [lhead=cluster_beta_nodes];
     alb -> staging_node_1 [lhead=cluster_staging_nodes];
 
-    build [ shape=box, label="Compiler Builder\nEC2", color="#ddddff:#aaaacc"];
+    lambda_stats -> dynamodb [ltail=cluster_gh_actions];
+    action_runner_1 -> s3 [ltail=cluster_gh_actions];
+
+    build [ shape=box, label="Legacy Builder\nEC2", color="#ddddff:#aaaacc"];
 
     admin->build;
     build->s3;
 
     admin -> {efs, s3, dynamodb};
-    { ce_node_1, ce_node_2, ce_node_3 } -> admin [ltail=cluster_ce_nodes];
-    { ce_node_1, ce_node_2, ce_node_3 } -> efs [ltail=cluster_ce_nodes];
-    { ce_node_1, ce_node_2, ce_node_3 } -> s3 [ltail=cluster_ce_nodes];
-    { ce_node_1, ce_node_2, ce_node_3 } -> dynamodb [ltail=cluster_ce_nodes];
-    { beta_node_1 } -> admin [ltail=cluster_beta_nodes];
-    { beta_node_1 } -> efs [ltail=cluster_beta_nodes];
-    { beta_node_1 } -> s3 [ltail=cluster_beta_nodes];
-    { beta_node_1 } -> dynamodb [ltail=cluster_beta_nodes];
+    { ce_node_1 } -> admin [ltail=cluster_ce_nodes];
+    { ce_node_1 } -> efs [ltail=cluster_ce_nodes];
+    { ce_node_1 } -> s3 [ltail=cluster_ce_nodes];
+    { ce_node_1 } -> dynamodb [ltail=cluster_ce_nodes];
     { staging_node_1 } -> admin [ltail=cluster_staging_nodes];
     { staging_node_1 } -> efs [ltail=cluster_staging_nodes];
     { staging_node_1 } -> s3 [ltail=cluster_staging_nodes];
