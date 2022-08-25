@@ -127,6 +127,16 @@ admin-node ~> ce --env prod environment refresh
 
 <div class="white-bg">
 
+## Maintaining
+
+[AWS Console](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:instanceState=running)
+
+</div>
+
+---
+
+<div class="white-bg">
+
 ## Compilers
 
 * Built with custom docker containers

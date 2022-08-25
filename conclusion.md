@@ -28,10 +28,6 @@
 
 ## Thank you!
 
-* [Main Github repo](https://github.com/compiler-explorer/compiler-explorer)
-* [Image Github repo](https://github.com/compiler-explorer/compiler-explorer-image)
-* [Patreon](https://patreon.com/mattgodbolt)
-
-What questions do you have?
+[github.com/compiler-explorer](https://github.com/compiler-explorer)
 
 </div>
