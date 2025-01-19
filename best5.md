@@ -11,6 +11,7 @@ unsigned divideXbyY(unsigned x, unsigned y)
   return x / y;
 }
 ```
+<!-- .element: data-ce -->
 
 ---
 
@@ -29,6 +30,7 @@ int countSetBits(unsigned a)
   return count;
 }
 ```
+<!-- .element: data-ce -->
 
 ---
 
@@ -43,6 +45,7 @@ bool isspc(char c)
     || c == '\t';
 }
 ```
+<!-- .element: data-ce -->
 
 ---
 
@@ -70,6 +73,7 @@ int sumToX(int x)
   return result;
 }
 ```
+<!-- .element: data-ce -->
 
 ---
 
@@ -98,3 +102,4 @@ int sumFunc(const vector<int> &v,
   return res;
 }
 ```
+<!-- .element: data-ce -->
