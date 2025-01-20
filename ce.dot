@@ -33,6 +33,14 @@ digraph compiler_explorer {
             ce_node_1_win [shape = box;label = "EC2";];
             ce_node_2_win [shape = box;label = "EC2";];
         }
+        subgraph cluster_ce_nodes_arm {
+            label = "ARM";
+            style = filled;
+            color = "#99ddda";
+            
+            ce_node_1_arm [shape = box;label = "EC2";];
+            ce_node_2_arm [shape = box;label = "EC2";];
+        }
         subgraph cluster_ce_nodes_gpu {
             label = "GPU";
             style = filled;
@@ -105,6 +113,7 @@ digraph compiler_explorer {
     {ce_node_1} -> dynamodb [ltail = cluster_ce_nodes;];
     {ce_node_1} -> ce_node_1_win [ltail = cluster_ce_nodes_linux; lhead = cluster_ce_nodes_win;];
     {ce_node_1} -> ce_node_1_gpu [ltail = cluster_ce_nodes_linux; lhead = cluster_ce_nodes_gpu;];
+    {ce_node_1} -> ce_node_1_arm [ltail = cluster_ce_nodes_linux; lhead = cluster_ce_nodes_arm;];
     {staging_node_1} -> admin [ltail = cluster_staging_nodes;];
     {staging_node_1} -> efs [ltail = cluster_staging_nodes;];
     {staging_node_1} -> s3 [ltail = cluster_staging_nodes;];
