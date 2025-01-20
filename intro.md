@@ -68,6 +68,13 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 ---
 
+### Today
+
+<!-- .element: class="white-bg" -->
+![Today](images/viz.png)<!-- .element: height="470" class="no-border" -->
+
+---
+
 <div class="white-bg">
 
 ### Evolution: 2012-2017
@@ -96,13 +103,4 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
   * Better compiler picker (now we have 3000+)
   * Ported to TypeScript internally
 
-</div>
-
----
-
-<div class="white-bg">
-
-### Evolution: 2025+
-  * To be determined...
-  
 </div>

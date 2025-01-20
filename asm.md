@@ -36,34 +36,34 @@ Ash nazg thrakatulûk agh burzum-ishi krimpatul.
 <!--- .element: class="white-bg" -->
 
 <div class="w30 white-bg"><ul class="instr fragment highlight-current-red">
-<li>`mov`</li>
-<li>`movzx`</li>
-<li>`movsxd`</li>
-<li>`lea`</li>
+<li>mov</li>
+<li>movzx</li>
+<li>movsxd</li>
+<li>lea</li>
 </ul><ul class="instr fragment highlight-current-red">
-<li>`call`</li>
-<li>`ret`</li>
-<li>`jmp`</li>
+<li>call</li>
+<li>ret</li>
+<li>jmp</li>
 </ul></div>
 
 <div class="w30 white-bg"><ul class="instr fragment highlight-current-red">
-<li>`push`</li>
-<li>`pop`</li>
+<li>push</li>
+<li>pop</li>
 </ul><ul class="instr fragment highlight-current-red">
-<li>`cmp`</li>
-<li>`test`</li>
-<li>`je`</li>
-<li>`jne`</li>
+<li>cmp</li>
+<li>test</li>
+<li>je</li>
+<li>jne</li>
 </ul></div>
 
 <div class="w30 white-bg"><ul class="instr fragment highlight-current-red">
-<li>`and`</li>
-<li>`xor`</li>
-<li>`add`</li>
-<li>`sub`</li>
-<li>`shl`</li>
-<li>`shr`</li>
-<li>`sar`</li>
+<li>and</li>
+<li>xor</li>
+<li>add</li>
+<li>sub</li>
+<li>shl</li>
+<li>shr</li>
+<li>sar</li>
 </ul></div>
 
 <div><br><br></div>
@@ -96,12 +96,12 @@ And many, many more...
 
 <div class="white-bg">
 <ul>
-<li>`rax` (return value)</li> 
-<li>`rdi` (1st param)</li> 
-<li>`rsi` (2nd param)</li> 
-<li>`rdx` (3rd param)</li>
-<li>`rbx` `rcx` `rbp` `r8-r15` `rsp`</li>
-<li>`xmm0-15` (`ymm0-15`... `zmm0-31`... `k0-7`)</li>
+<li>rax (return value)</li> 
+<li>rdi (1st param)</li> 
+<li>rsi (2nd param)</li> 
+<li>rdx (3rd param)</li>
+<li>rbx rcx rbp r8-r15 rsp</li>
+<li>xmm0-15 (ymm0-15... zmm0-31... k0-7)</li>
 </ul></div>
 
 
@@ -141,17 +141,3 @@ And many, many more...
     </tr>
     </tbody>
 </table>
-
-
-<!-- .slide: data-background="./images/bg/weave.jpg" -->
-## Important note on performance
-<!-- .element: class="white-bg" -->
-
-<div class="fragment white-bg">
-<ul>
-<li><a href="https://github.com/google/benchmark">Google Benchmark</a></li>
-<li><a href="https://github.com/nickbruun/hayai">hayai</a></li>
-<li><a href="https://github.com/rmartinho/nonius">Nonius</a></li>
-<li><a href="http://quick-bench.com/">Quick Bench</a></li>
-</ul>
-</div>
