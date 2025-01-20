@@ -2,7 +2,7 @@
 
 ### Overview
 * Intro & History
-* Hot Features
+* Some Cool Features
 * Behind the Scenes
 
 </div>
@@ -70,34 +70,15 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div class="white-bg">
 
-### Evolution: 2012-2014
+### Evolution: 2012-2017
   * Colouration & filtering
   * More compilers
-  * D language support
-  * Rust support
-  * goo.gl short links
-
-</div>
-
----
-
-<div class="white-bg">
-
-### Evolution: 2015-2017
+  * New languages: D & Rust
+  * Short links
   * Binary support
   * GoldenLayout
   * Monaco
   * Libraries
-</div>
-
----
-
-<div class="white-bg">
-
-### Evolution: 2018
-  * Unified languages
-  * MS compilers
-  * Tools windows
 
 </div>
 
@@ -105,8 +86,23 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 <div class="white-bg">
 
-### Evolution: 2019
-  * 6502 support! <!-- .element: class="fragment" -->
-  * Code execution! <!-- .element: class="fragment" -->
+### Evolution: 2018-2024
+  * More languages: now 65+
+  * Dark mode
+  * Tools windows (15+)
+  * User code execution
+  * Multiple source files (`cmake`)
+  * Windows, ARM & GPU
+  * Better compiler picker (now we have 3000+)
+  * Ported to TypeScript internally
+
+</div>
+
+---
+
+<div class="white-bg">
+
+### Evolution: 2025+
+  * To be determined...
   
 </div>
