@@ -1,9 +1,16 @@
 <div class="white-bg">
 
 ### Overview
-* Intro & History
+* Who am I?
+* What is Compiler Explorer?
 * Some Cool Features
 * Behind the Scenes
+
+<div class="fragment">
+
+**BUT** This is interactive! Interrupt and ask questions.
+
+</div>
 
 </div>
 
@@ -13,10 +20,10 @@
 
 ### About me
 
-* Decade of making console games
+* Decade of making PC & console games
 * Writing C++ tools
 * Google, YouTube mobile
-* Finance
+* Low-Latency Finance
 * But then...<!-- .element: class="fragment" -->
 
 </div>
@@ -36,9 +43,10 @@
 ### Origin Story
 
 ```bash
-watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
-    | c++filt \
-    | grep -vE '\s+\.'"
+watch "
+  g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel
+  | c++filt
+  | grep -vE '\s+\.'"
 ```
 <!-- .element: class="fragment" -->
 
@@ -68,39 +76,35 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 ---
 
+<div class="white-bg col2">
+<div>
+
+### 2012
+  * gcc & clang
+  * C++ only
+  * Unfiltered
+  * 4k lines of JavaScript
+  * Just me!
+  * Self-funded
+
+</div>
+<div class="fragment">
+
+### 2025
+  * 3,000+ compilers
+  * 65+ languages
+  * Filters, tools, diffs
+  * 65k lines of TypeScript
+  * Amazing team
+  * Patrons & Sponsors
+
+</div>
+</div>
+
+
+---
+
 ### Today
 
 <!-- .element: class="white-bg" -->
 ![Today](images/viz.png)<!-- .element: height="470" class="no-border" -->
-
----
-
-<div class="white-bg">
-
-### Evolution: 2012-2017
-  * Colouration & filtering
-  * More compilers
-  * New languages: D & Rust
-  * Short links
-  * Binary support
-  * GoldenLayout
-  * Monaco
-  * Libraries
-
-</div>
-
----
-
-<div class="white-bg">
-
-### Evolution: 2018-2024
-  * More languages: now 65+
-  * Dark mode
-  * Tools windows (15+)
-  * User code execution
-  * Multiple source files (`cmake`)
-  * Windows, ARM & GPU
-  * Better compiler picker (now we have 3000+)
-  * Ported to TypeScript internally
-
-</div>

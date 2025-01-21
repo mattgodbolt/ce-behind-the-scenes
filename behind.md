@@ -12,11 +12,18 @@
 
 ## More boringly...
 
+<div class="col2">
+<div>
+
 * node.js
 * Amazon Web Services
 * GitHub actions
   - with custom runners
 * CloudFront / Load Balancers
+
+</div>
+<div>
+
 * 5-30 EC2 instances
   - x86 Linux
   - x86 Windows
@@ -24,6 +31,8 @@
   - GPU enabled
 * EFS / S3 / DynamoDb / Athena
 
+</div>
+</div>
 </div><!-- .element: class="white-bg" -->
 
 ---
@@ -37,9 +46,12 @@
 
 <div>
 
-## CE stats
+## Public stats
+
+![stats](images/stats.png)<!-- .element: height="400" -->
 
 [stats.compiler-explorer.com](https://stats.compiler-explorer.com)
+
 
 </div><!-- .element: class="white-bg" -->
 
@@ -50,7 +62,7 @@
 ## CE stats
 
 * 1,000 page loads per hour
-* 3,000,000+ compiles per week (5/sec)
+* 10,000,000+ compiles per week (8/sec)
 * 400,000+ executions per week
 * 7,000 short URLs per week
 
@@ -64,6 +76,7 @@
 
 * 3000+ compilers
 * 3.5+ TB
+* Biggest current infra problem!
 
 <div class="lang-container">
 <div>Ada</div>
@@ -109,7 +122,7 @@
 
 ## Maintaining
 
-```sh
+```
 admin-node ~> ce --env prod instances list
 Address          State      Type       ELB     Service  Version
 34.226.244.207   running    t3.medium  healthy running  3965 (main)
@@ -122,7 +135,7 @@ Live  Branch     Version    Size       Hash
       policy-... 3983       58.2MiB    27eccb..62da61
 
 admin-node ~> ce --env prod builds set_current 3979
-admin-node ~> ce --env prod instances restart
+admin-node ~> ce --env prod environment refresh
 ```
 
 </div>
@@ -148,6 +161,7 @@ admin-node ~> ce --env prod instances restart
 * Compilers
 * User execution
 * [nsjail](https://github.com/google/nsjail)
+* [cewrapper](https://github.com/compiler-explorer/cewrapper) on Windows
 
 </div>
 

@@ -1,4 +1,5 @@
 ## Assembly!
+
 <!-- .element: class="white-bg" -->
 
 <div class="fragment white-bg">
@@ -11,8 +12,11 @@ Ash nazg durbatulûk, ash nazg gimbatul,
 Ash nazg thrakatulûk agh burzum-ishi krimpatul.
 </aside>
 
+---
+
 
 ### x86-64 Assembly
+
 <!--- .element: class="white-bg" -->
 
 ```x86asm
@@ -25,14 +29,17 @@ Ash nazg thrakatulûk agh burzum-ishi krimpatul.
 ```x86asm
   ret                           ; return
   inc rax                       ; increment "rax"
-  mov edx, 1234                 ; set "edx" to the value 1234 
-  add rsi, rdi                  ; "rsi" += "rdi" 
+  mov edx, 1234                 ; set "edx" to the value 1234
+  add rsi, rdi                  ; "rsi" += "rdi"
   vpaddd ymm1, ymm2, ymm0       ; "ymm1" = "ymm2" + "ymm0"
 ```
+
 <!-- .element: class="fragment" -->
 
+---
 
 ### Instructions
+
 <!--- .element: class="white-bg" -->
 
 <div class="w30 white-bg"><ul class="instr fragment highlight-current-red">
@@ -72,8 +79,10 @@ Ash nazg thrakatulûk agh burzum-ishi krimpatul.
 And many, many more...
 </div>
 
+---
 
 ### Operands
+
 <!--- .element: class="white-bg" -->
 
 ```x86asm
@@ -85,25 +94,29 @@ And many, many more...
 ```
 
 ```x86asm
-  add eax, dword ptr [rdi + 12 + rsi * 4] 
+  add eax, dword ptr [rdi + 12 + rsi * 4]
                                 ; eax += *(int *)(rdi + 12 + rsi * 4)
 ```
 <!-- .element: class="fragment" -->
 
+---
+
 
 ### Registers
+
 <!--- .element: class="white-bg" -->
 
 <div class="white-bg">
 <ul>
-<li>rax (return value)</li> 
-<li>rdi (1st param)</li> 
-<li>rsi (2nd param)</li> 
-<li>rdx (3rd param)</li>
-<li>rbx rcx rbp r8-r15 rsp</li>
-<li>xmm0-15 (ymm0-15... zmm0-31... k0-7)</li>
+<li><span class="instr">rax</span> (return value)</li>
+<li><span class="instr">rdi</span> (1st param)</li>
+<li><span class="instr">rsi</span> (2nd param)</li>
+<li><span class="instr">rdx</span> (3rd param)</li>
+<li><span class="instr">rbx rcx rbp r8-r15 rsp</span></li>
+<li><span class="instr">xmm0-15</span> (<span class="instr">ymm0-15</span>... <span class="instr">zmm0-31</span>... <span class="instr">k0-7</span>)</li>
 </ul></div>
 
+---
 
 <table class="registers white-bg">
     <thead>

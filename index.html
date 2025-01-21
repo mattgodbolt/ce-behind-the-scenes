@@ -47,11 +47,15 @@
       }
 
       div.lang-container {
+        margin-top: 0.5em;
         padding-left: 3em;
         padding-right: 3em;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        border: 1px solid #555a5f;
+        background-color: #ccc;
+        border-radius: 5px;
       }
 
       .lang-container div {
@@ -77,7 +81,10 @@
 
       ul.instr {
         display: block !important;
-        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .instr {
+        font-family: "Courier New", Courier, monospace;
       }
 
       .w50 {
@@ -194,6 +201,13 @@
         padding: 8px !important;
         margin-left: 15px;
       }
+      div.col2 {
+        display: flex;
+      }
+
+      div.col2 > div {
+        flex: 1;
+      }
     </style>
   </head>
   <body>
@@ -201,16 +215,23 @@
       <div class="slides">
         <section>
           <div class="white-bg">
-            <h3>Compiler Explorer:<br />Behind the Scenes</h3>
+            <h3>Compiler Explorer:<br />Deep Dive</h3>
             <h5>
-              Matt Godbolt <br /><a href="https://twitter.com/mattgodbolt"
-                >@mattgodbolt</a
+              Matt Godbolt <br /><a
+                href="https://bsky.app/profile/matt.godbolt.org"
+                >@matt.godbolt.org</a
               >
+              <div>SpaceX, January 21 2025</div>
             </h5>
           </div>
         </section>
         <section
           data-markdown="intro.md"
+          data-separator-vertical="^---\n"
+          data-separator="---disabled---"
+        ></section>
+        <section
+          data-markdown="asm.md"
           data-separator-vertical="^---\n"
           data-separator="---disabled---"
         ></section>
@@ -235,10 +256,6 @@
           data-separator-vertical="^---\n"
           data-separator="---disabled---"
         ></section> -->
-        <section
-          data-markdown="asm.md"
-          data-separator-vertical="^\n\n"
-        ></section>
       </div>
       <div class="footer">
         &copy; <a href="https://twitter.com/mattgodbolt">Matt Godbolt</a> 2024

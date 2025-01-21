@@ -17,7 +17,7 @@
 * Learned so much
 * Doors opened
 * C++ community is amazing
-  * Thank you Partouf, Abril, Austin, Mark, Jun, Jeremy...
+  * Thank you Partouf, Abril, Austin, Mark, Jun, Jeremy, Ofek...
   
 </div>
 
