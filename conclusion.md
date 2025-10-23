@@ -4,7 +4,7 @@
 
 - Improve behind the scenes stuff
 - Make it faster/easier to deploy
-- Continuous Deployment!
+- Continuous Deployment?!
 - Compiler Explorer, LLC
 
 </div>

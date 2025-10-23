@@ -102,18 +102,6 @@ watch "
 
 ---
 
-<div class="white-bg">
-
-### Evolution: 2018
-
-- Unified languages
-- MS compilers
-- Tools windows
-
-</div>
-
----
-
 ### Today
 
 <!-- .element: class="white-bg" -->
