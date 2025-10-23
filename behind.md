@@ -20,6 +20,7 @@
 - GitHub actions
   - with custom runners
 - CloudFront / Load Balancers
+- Magic squashfs
 
 </div>
 <div>
@@ -192,8 +193,6 @@ admin-node ~> ce --env prod environment refresh
 
 ## When things go wrong
 
-<ul>
-<li>
 
 [Bad config](https://cpplang.slack.com/archives/C7ETT0ZRP/p1534332219000100) (August 2018)
 
@@ -201,23 +200,35 @@ admin-node ~> ce --env prod environment refresh
 
 <!-- .element: class="fragment" -->
 
-</li>
-<li class=fragment>
+</div>
+
+---
+
+<div class="white-bg">
+
+## When things go wrong
 
 [EFS transfer limit](https://www.patreon.com/posts/11241143) (May 2017)<p>
 ![Graph](images/EFS.png)<!-- .element: height="200" -->
 
-</li>
-<li class=fragment>
+</div>
+
+---
+
+<div class="white-bg">
+
+## When things go wrong
 
 [S3 outage](https://aws.amazon.com/message/41926/) (Feb 2017)
 
-</li>
-<li class=fragment>
+</div>
+
+---
+
+<div class="white-bg">
+
+## When things go wrong
 
 [EFS/NFS/bind mount/systemd](https://patchwork.kernel.org/patch/10104257/) catastrophe (September 2019)
-
-</li>
-</ul>
 
 </div>
