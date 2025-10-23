@@ -1,0 +1,4 @@
+*.swp
+*~
+games/
+node_modules

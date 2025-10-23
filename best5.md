@@ -1,4 +1,5 @@
 ## Favourite Optimisations
+
 <!-- .element: class="white-bg" -->
 
 ---
@@ -11,6 +12,8 @@ unsigned divideXbyY(unsigned x, unsigned y)
   return x / y;
 }
 ```
+
+<!-- .element: data-ce -->
 
 ---
 
@@ -30,6 +33,8 @@ int countSetBits(unsigned a)
 }
 ```
 
+<!-- .element: data-ce -->
+
 ---
 
 ### Chained conditionals <!-- .element: class="white-bg" -->
@@ -43,6 +48,8 @@ bool isspc(char c)
     || c == '\t';
 }
 ```
+
+<!-- .element: data-ce -->
 
 ---
 
@@ -71,6 +78,8 @@ int sumToX(int x)
 }
 ```
 
+<!-- .element: data-ce -->
+
 ---
 
 ## Devirtualisation <!-- .element: class="white-bg" -->
@@ -98,3 +107,5 @@ int sumFunc(const vector<int> &v,
   return res;
 }
 ```
+
+<!-- .element: data-ce -->

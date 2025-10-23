@@ -1,23 +1,24 @@
 <div class="white-bg">
 
 ### Overview
-* Intro & History
-* Hot Features
-* Behind the Scenes
+
+- Intro & History
+- Hot Features
+- Behind the Scenes
 
 </div>
 
 ---
-    
+
 <div class="white-bg">
 
 ### About me
 
-* Decade of making console games
-* Writing C++ tools
-* Google, YouTube mobile
-* Finance
-* But then...<!-- .element: class="fragment" -->
+- Decade of making PC & console games
+- Writing C++ tools
+- Google, YouTube mobile
+- Low-Latency Finance
+- But then...<!-- .element: class="fragment" -->
 
 </div>
 
@@ -36,10 +37,12 @@
 ### Origin Story
 
 ```bash
-watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
-    | c++filt \
-    | grep -vE '\s+\.'"
+watch "
+  g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel
+  | c++filt
+  | grep -vE '\s+\.'"
 ```
+
 <!-- .element: class="fragment" -->
 
 </div>
@@ -54,40 +57,47 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 
 ## Origin Story
 
-* Great
-* But not pretty
-* TO THE WEB!<!-- .element: class="fragment" -->
+- Great
+- But not pretty
+- TO THE WEB!<!-- .element: class="fragment" -->
 
 </div>
 
 ---
 
 ### GCC Explorer!
+
 <!-- .element: class="white-bg" -->
+
 ![First version](images/first_working.png)<!-- .element: height="470" class="no-border" -->
 
 ---
 
-<div class="white-bg">
+<div class="white-bg col2">
+<div>
 
-### Evolution: 2012-2014
-  * Colouration & filtering
-  * More compilers
-  * D language support
-  * Rust support
-  * goo.gl short links
+### 2012
+
+- gcc & clang
+- C++ only
+- Unfiltered
+- 4k lines of JavaScript
+- Just me!
+- Self-funded
 
 </div>
+<div class="fragment">
 
----
+### 2025
 
-<div class="white-bg">
+- 3,000+ compilers
+- 65+ languages
+- Filters, tools, diffs
+- 65k lines of TypeScript
+- Amazing team
+- Patrons & Sponsors
 
-### Evolution: 2015-2017
-  * Binary support
-  * GoldenLayout
-  * Monaco
-  * Libraries
+</div>
 </div>
 
 ---
@@ -95,18 +105,17 @@ watch "g++ /tmp/test.cc -std=c++0x -O2 -c -S -o - -masm=intel \
 <div class="white-bg">
 
 ### Evolution: 2018
-  * Unified languages
-  * MS compilers
-  * Tools windows
+
+- Unified languages
+- MS compilers
+- Tools windows
 
 </div>
 
 ---
 
-<div class="white-bg">
+### Today
 
-### Evolution: 2019
-  * 6502 support! <!-- .element: class="fragment" -->
-  * Code execution! <!-- .element: class="fragment" -->
-  
-</div>
+<!-- .element: class="white-bg" -->
+
+![Today](images/viz.png)<!-- .element: height="470" class="no-border" -->
